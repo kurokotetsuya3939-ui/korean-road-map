@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssfiles/main.css">
+    <link rel="stylesheet" href="cssfiles/index.css">
+    <title>Hangul Step</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+        <div class="logo-container">
+            <a href="index.html" class="logo-text">
+                <h1>Hangul step</h1>
+            </a>
+        </div>
+        <div class="nav-container">
+            <nav class="navigation">
+                <a href="roadmap.html" class="active">Дорожная карта</a>
+                <a href="books.html">Книги и материалы</a>
+                <a href="grammar.html">Грамматика</a>
+                <a href="index.html#about">Об авторе</a>
+            </nav>
+        </div>
+        <div class="instruments-container">
+            <button class="login-btn" id="login-btn">Login</button>
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+
+        <section class="hero">
+            <div class="hero-content">
+                <div class="author-badge">
+                    <div class="img-cont"><img src="images/diablo.jpg" alt="Фото автора" class="author-img"></div>
+                    <span>Докторант в Корее • Авторская методика</span>
+                </div>
+
+                <h1>Изучай корейский язык системно: от Хангыля до TOPIK</h1>
+
+                <p>Пошаговая дорожная карта, проверенные учебные материалы и структурированная грамматика для
+                    комфортного обучения.</p>
+
+                <div class="hero-buttons">
+                    <a href="roadmap.html" class="btn btn-primary">Начать обучение</a>
+                    <a href="books.html" class="btn btn-secondary">Смотреть материалы</a>
+                </div>
+            </div>
+
+            <div class="hero-card">
+                <div class="stat-item">
+                    <span class="stat-number">4</span>
+                    <span class="stat-text">Уровня обучения</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100+</span>
+                    <span class="stat-text">Скачиваемых PDF</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-text">Бесплатный доступ</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURES SECTION -->
+
+        <section class="features">
+            <div class="section-header">
+                <h2 class="section-title">Почему эта система работает</h2>
+                <p class="section-subtitle">Продуманный подход к обучению без лишней теории</p>
+            </div>
+
+            <div class="features-grid">
+
+                <!-- FEATURE-CARD 1 -->
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎓</div>
+                    <h3>Экспертный материал</h3>
+                    <p>Вся программа составлена докторантом южнокорейского университета с учетом реальной практики
+                        языка.</p>
+                </div>
+
+                <!-- FEATURE-CARD 2 -->
+
+                <div class="feature-card">
+                    <div class="feature-icon">🗺️</div>
+                    <h3>Пошаговый трек</h3>
+                    <p>Четкая дорожная карта от изучения алфавита Хангыль до продвинутого уровня TOPIK II.</p>
+                </div>
+
+                <!-- FEATURE-CARD 3 -->
+
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Готовые материалы</h3>
+                    <p>Бесплатный доступ к подборкам учебников, рабочим тетрадям и пособиям в формате PDF.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ROADMAP-VIEW SECTION -->
+
+        <section class="roadmap-preview">
+            <div class="section-header">
+                <h2 class="section-title">Этапы обучения</h2>
+                <p class="section-subtitle">Пройди путь от новичка до свободного владения языком</p>
+            </div>
+
+            <div class="roadmap-grid">
+
+                <!-- LEVEL-CARD 1 -->
+
+                <div class="level-card">
+                    <span class="level-badge badge-start">Уровень 0</span>
+                    <h3>Алфавит и Старт</h3>
+                    <p>Чтение, правильное произношение, правила сложения слогов и базовая фонетика Хангыля.</p>
+                    <ul class="level-features">
+                        <li>Правила чтения</li>
+                        <li>Прописи Хангыль (PDF)</li>
+                        <li>Основы произношения</li>
+                    </ul>
+                    <a href="roadmap.html#level-0" class="btn-link">Перейти к урокам →</a>
+                </div>
+
+                <!-- LEVEL-CARD 2 -->
+
+                <div class="level-card">
+                    <span class="level-badge">Уровень 1-2</span>
+                    <h3>Начальный (TOPIK I)</h3>
+                    <p>Базовая грамматика, разговорные конструкции для повседневной жизни и знакомство.</p>
+                    <ul class="level-features">
+                        <li>Разговорные падежи</li>
+                        <li>Сварка времён (наст./прош.)</li>
+                        <li>Базовый словарь Anki</li>
+                    </ul>
+                    <a href="roadmap.html#level-1" class="btn-link">Перейти к урокам →</a>
+                </div>
+
+                <!-- LEVEL-CARD 3 -->
+
+                <div class="level-card">
+                    <span class="level-badge">Уровень 3-4</span>
+                    <h3>Средний (TOPIK II)</h3>
+                    <p>Сложные грамматические связи, чтение оригинальной литературы и подготовка к экзамену.</p>
+                    <ul class="level-features">
+                        <li>Сложные союзы и обороты</li>
+                        <li>Аудирование и эссе</li>
+                        <li>Тесты прошлых лет</li>
+                    </ul>
+                    <a href="roadmap.html#level-2" class="btn-link">Перейти к урокам →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- BOOK SECTION -->
+        <section class="books-preview">
+            <div class="section-header">
+                <h2 class="section-title">Рекомендованные учебники</h2>
+                <p class="section-subtitle">Проверенные пособия для эффективного изучения</p>
+            </div>
+
+            <div class="books-grid">
+
+                <!-- BOOK-CARD 1 -->
+
+                <div class="book-card">
+                    <div class="book-cover">
+                        <span class="book-tag">Хангыль</span>
+                        <div class="cover-placeholder">📘</div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Корейский алфавит за 3 дня</h3>
+                        <p class="book-author">Авторское пособие</p>
+                        <p class="book-desc">Базовые правила чтения, таблицы прописи и фонологические нюансы.</p>
+                        <a href="books.html#book-1" class="btn-book">Скачать PDF</a>
+                    </div>
+                </div>
+
+                <!-- BOOK-CARD 2 -->
+                <div class="book-card">
+                    <div class="book-cover">
+                        <span class="book-tag">TOPIK I</span>
+                        <div class="cover-placeholder">📗</div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Базовая грамматика и слова</h3>
+                        <p class="book-author">Учебник для начинающих</p>
+                        <p class="book-desc">50 ключевых грамматических конструкций и 500 необходимых слов.</p>
+                        <a href="books.html#book-2" class="btn-book">Скачать PDF</a>
+                    </div>
+                </div>
+
+                <!-- BOOK-CARD 3 -->
+                <div class="book-card">
+                    <div class="book-cover">
+                        <span class="book-tag">TOPIK II</span>
+                        <div class="cover-placeholder">📙</div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Сборник тестов TOPIK II</h3>
+                        <p class="book-author">Практикум</p>
+                        <p class="book-desc">Разбор реальных заданий прошлых лет с комментариями и ответами.</p>
+                        <a href="books.html#book-3" class="btn-book">Скачать PDF</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="books-more">
+                <a href="books.html" class="btn btn-secondary">Смотреть всю библиотеку →</a>
+            </div>
+        </section>
+
+
+        <!-- SECTION ABOUT AUTHOR -->
+        <section id="about" class="about-author">
+            <div class="author-container">
+                <div class="author-image-wrapper">
+                    <div class="author-photo-placeholder">👩‍🎓</div>
+                    <span class="author-badge-korea">🇰🇷 Сеул, Южная Корея</span>
+                </div>
+                <div class="author-content">
+                    <span class="section-tag">О создателе проекта</span>
+                    <h2>Привет! Я автор этой системы</h2>
+                    <p>Учусь в докторантуре южнокорейского университета и ежедневно погружена в языковую среду. Когда я
+                        начинала учить корейский, то столкнулась с хаосом в материалах и нехваткой структурированного
+                        подхода.</p>
+                    <p>Этот сайт создан для того, чтобы дать тебе четкую пошаговую систему без «воды» — от алфавита до
+                        сдачи экзамена TOPIK II.</p>
+                    <div class="author-stats">
+                        <div class="author-stat-item">
+                            <strong>Ph.D.</strong>
+                            <span>Докторантура</span>
+                        </div>
+                        <div class="author-stat-item">
+                            <strong>5+ лет</strong>
+                            <span>Жизни в Корее</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3 class="footer-logo">KoreanPath</h3>
+                <p>Авторская система и пошаговая дорожная карта изучения корейского языка.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="roadmap.html">Дорожная карта</a></li>
+                    <li><a href="books.html">Материалы и книги</a></li>
+                    <li><a href="grammar.html">Грамматика</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Контакты & Соцсети</h4>
+                <p>По вопросам и сотрудничеству:</p>
+                <a href="mailto:example@koreanpath.com" class="footer-email">contact@koreanpath.com</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 KoreanPath. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

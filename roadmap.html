@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssfiles/main.css">
+    <link rel="stylesheet" href="cssfiles/roadmapstyle.css">
+    <title>Hangul Step</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+
+    <header class="header">
+        <div class="logo-container">
+            <a href="index.html" class="logo-text">
+                <h1>Hangul step</h1>
+            </a>
+        </div>
+        <div class="nav-container">
+            <nav class="navigation">
+                <a href="index.html">Главная</a>
+                <a href="roadmap.html">Дорожная карта</a>
+                <a href="books.html">Книги и материалы</a>
+                <a href="grammar.html">Грамматика</a>
+                <a href="index.html#about">Об авторе</a>
+            </nav>
+        </div>
+        <div class="instruments-container">
+            <button class="login-btn" id="login-btn">Login</button>
+        </div>
+
+    </header>
+
+    <main>
+
+        <!-- HERO AND FILTER SECTION -->
+
+        <section class="roadmap-hero">
+            <div class="roadmap-hero-container">
+                <span class="hero-badge">Interactive Roadmap</span>
+                <h1>Пошаговый план изучения</h1>
+                <p>Пройди путь от освоения алфавита Хангыль до уверенного владения корейским языком</p>
+
+                <!-- FILTER LEVELS -->
+
+                <div class="level-filters">
+                    <button class="filter-btn active" data-filter="all">Все уровни</button>
+                    <button class="filter-btn" data-filter="level-0">Уровень 0 (Хангыль)</button>
+                    <button class="filter-btn" data-filter="level-1">TOPIK I (1-2 гып)</button>
+                    <button class="filter-btn" data-filter="level-2">TOPIK II (3-4 гып)</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- TIMELINE SECTION -->
+
+        <section class="roadmap-timeline">
+            <div class="timeline-container">
+
+                <!-- ЭТАП 0 -->
+
+                <div class="timeline-item" data-level="level-0">
+                    <div class="timeline-number">00</div>
+                    <div class="timeline-content">
+                        <span class="level-badge badge-start">Уровень 0</span>
+                        <h2>Алфавит Хангыль и фонетика</h2>
+                        <p>Фундамент корейского языка: освоение букв, правил чтения и правильного произношения.</p>
+                        <div class="timeline-tags">
+                            <span>40 букв</span>
+                            <span>Патчим</span>
+                            <span>1–2 недели</span>
+                        </div>
+                        <button class="btn-more" data-target="modal-level-0">Подробнее о программе →</button>
+                    </div>
+                </div>
+
+                <!-- ЭТАП 1 -->
+
+                <div class="timeline-item" data-level="level-1">
+                    <div class="timeline-number">01</div>
+                    <div class="timeline-content">
+                        <span class="level-badge">Уровень 1 (TOPIK I)</span>
+                        <h2>Начальный уровень (A1)</h2>
+                        <p>Базовые фразы для повседневного общения, знакомство, покупка вещей и времена глаголов.</p>
+                        <div class="timeline-tags">
+                            <span>800 слов</span>
+                            <span>Базовые падежи</span>
+                            <span>1–2 месяца</span>
+                        </div>
+                        <button class="btn-more" data-target="modal-level-1">Подробнее о программе →</button>
+                    </div>
+                </div>
+
+                <!-- ЭТАП 2 -->
+
+                <div class="timeline-item" data-level="level-1">
+                    <div class="timeline-number">02</div>
+                    <div class="timeline-content">
+                        <span class="level-badge">Уровень 2 (TOPIK I)</span>
+                        <h2>Базовый разговорный (A2)</h2>
+                        <p>Вежливые формы речи, описание планов, ориентация в городе и разговорные конструкции.</p>
+                        <div class="timeline-tags">
+                            <span>1500 слов</span>
+                            <span>Соединительные союзы</span>
+                            <span>2–3 месяца</span>
+                        </div>
+                        <button class="btn-more" data-target="modal-level-2">Подробнее о программе →</button>
+                    </div>
+                </div>
+
+                <!-- ЭТАП 3 -->
+
+                <div class="timeline-item" data-level="level-2">
+                    <div class="timeline-number">03</div>
+                    <div class="timeline-content">
+                        <span class="level-badge">Уровень 3-4 (TOPIK II)</span>
+                        <h2>Средний уровень (B1-B2)</h2>
+                        <p>Понимание оригинального контента, сложное аудирование, чтение новостей и сдача TOPIK II.</p>
+                        <div class="timeline-tags">
+                            <span>3000+ слов</span>
+                            <span>Профессиональный корейский</span>
+                            <span>4–6 месяцев</span>
+                        </div>
+                        <button class="btn-more" data-target="modal-level-3">Подробнее о программе →</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- МОДАЛЬНОЕ ОКНО ДЛЯ 0 LEVEL -->
+        <div class="modal-overlay" id="modal-level-0">
+            <div class="modal-card">
+                <button class="modal-close">&times;</button>
+                <div class="modal-header">
+                    <span class="level-badge badge-start">Уровень 0</span>
+                    <h2>Алфавит Хангыль и Базовая фонетика</h2>
+                </div>
+                <div class="modal-body">
+                    <h3>📖 Что входит в этот уровень:</h3>
+                    <ul class="modal-topics">
+                        <li>10 простых и 11 сложных гласных</li>
+                        <li>14 базовых и 5 сдвоенных согласных</li>
+                        <li>Правила сложения слогов и базовая фонетика</li>
+                        <li>Правила чтения подслога (Патчим)</li>
+                    </ul>
+                    <div class="modal-resources">
+                        <h3>📚 Материалы для изучения:</h3>
+                        <div class="resource-links">
+                            <a href="books.html" class="btn-resource">📘 Скачать прописи PDF</a>
+                            <a href="grammar.html" class="btn-resource">✍️ Раздел грамматики уровня 0</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- МОДАЛЬНОЕ ОКНО ДЛЯ 1 LEVEL -->
+        <div class="modal-overlay" id="modal-level-1">
+            <div class="modal-card">
+                <button class="modal-close">&times;</button>
+                <div class="modal-header">
+                    <span class="level-badge">Уровень 1 (TOPIK I)</span>
+                    <h2>Начальный уровень (A1)</h2>
+                </div>
+                <div class="modal-body">
+                    <h3>📖 Что входит в этот уровень:</h3>
+                    <ul class="modal-topics">
+                        <li>Базовый словарь (около 800 обиходных слов)</li>
+                        <li>Именительный, винительный и дательный падежи</li>
+                        <li>Настоящее, прошедшее и будущее времена глаголов</li>
+                        <li>Конструкции вежливости (-아/어요, -습니다)</li>
+                    </ul>
+                    <div class="modal-resources">
+                        <h3>📚 Материалы для изучения:</h3>
+                        <div class="resource-links">
+                            <a href="books.html" class="btn-resource">📘 Скачать учебник TOPIK I (A1)</a>
+                            <a href="grammar.html" class="btn-resource">✍️ Грамматика начального уровня</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- МОДАЛЬНОЕ ОКНО ДЛЯ 2 LEVEL -->
+        <div class="modal-overlay" id="modal-level-2">
+            <div class="modal-card">
+                <button class="modal-close">&times;</button>
+                <div class="modal-header">
+                    <span class="level-badge">Уровень 2 (TOPIK I)</span>
+                    <h2>Базовый разговорный (A2)</h2>
+                </div>
+                <div class="modal-body">
+                    <h3>📖 Что входит в этот уровень:</h3>
+                    <ul class="modal-topics">
+                        <li>Расширенный лексический запас (1500+ слов)</li>
+                        <li>Соединительные союзы и деепричастия (-고, -(으)면, -지만)</li>
+                        <li>Официально-деловой и неофициальный стиль речи</li>
+                        <li>Правила выражения причин, целей и намерений</li>
+                    </ul>
+                    <div class="modal-resources">
+                        <h3>📚 Материалы для изучения:</h3>
+                        <div class="resource-links">
+                            <a href="books.html" class="btn-resource">📘 Учебник и тесты TOPIK I (A2)</a>
+                            <a href="grammar.html" class="btn-resource">✍️ База грамматики уровня 2</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- МОДАЛЬНОЕ ОКНО ДЛЯ 3 LEVEL -->
+        <div class="modal-overlay" id="modal-level-3">
+            <div class="modal-card">
+                <button class="modal-close">&times;</button>
+                <div class="modal-header">
+                    <span class="level-badge">Уровень 3-4 (TOPIK II)</span>
+                    <h2>Средний уровень (B1-B2)</h2>
+                </div>
+                <div class="modal-body">
+                    <h3>📖 Что входит в этот уровень:</h3>
+                    <ul class="modal-topics">
+                        <li>Продвинутый словарный запас и идиомы (3000+ слов)</li>
+                        <li>Косвенная речь и сложные грамматические связи</li>
+                        <li>Чтение новостей, статей и просмотр контента без субтитров</li>
+                        <li>Подготовка к эссе и аудированию экзамена TOPIK II</li>
+                    </ul>
+                    <div class="modal-resources">
+                        <h3>📚 Материалы для изучения:</h3>
+                        <div class="resource-links">
+                            <a href="books.html" class="btn-resource">📘 Полный сборник TOPIK II</a>
+                            <a href="grammar.html" class="btn-resource">✍️ Сложные грамматические формы</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3 class="footer-logo">KoreanPath</h3>
+                <p>Авторская система и пошаговая дорожная карта изучения корейского языка.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="roadmap.html">Дорожная карта</a></li>
+                    <li><a href="books.html">Материалы и книги</a></li>
+                    <li><a href="grammar.html">Грамматика</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Контакты & Соцсети</h4>
+                <p>По вопросам и сотрудничеству:</p>
+                <a href="mailto:example@koreanpath.com" class="footer-email">contact@koreanpath.com</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 KoreanPath. Все права защищены.</p>
+        </div>
+    </footer>
+    <script src="js.files/roadmapjs.js"></script>
+</body>
+
+</html>

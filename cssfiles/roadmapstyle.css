@@ -1,0 +1,306 @@
+.roadmap-hero {
+    padding: 60px 20px 40px;
+    background: linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 100%);
+    text-align: center;
+}
+
+.roadmap-hero-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-badge {
+    display: inline-block;
+    background-color: #EFF6FF;
+    color: #2563EB;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+    border: 1px solid #DBEAFE;
+}
+
+.roadmap-hero h1 {
+    font-size: 36px;
+    color: #0F172A;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.roadmap-hero p {
+    font-size: 16px;
+    color: #64748B;
+    margin-bottom: 32px;
+    line-height: 1.5;
+}
+
+.level-filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    color: #475569;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+    border-color: #93C5FD;
+    color: #2563EB;
+}
+
+.filter-btn.active {
+    background: #2563EB;
+    color: #FFFFFF;
+    border-color: #2563EB;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+
+.roadmap-timeline {
+    padding: 60px 20px 100px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.timeline-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 31px;
+    width: 2px;
+    background: #E2E8F0;
+    z-index: 1;
+}
+
+.timeline-item {
+    position: relative;
+    display: flex;
+    gap: 24px;
+    z-index: 2;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.timeline-number {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 2px solid #3B82F6;
+    color: #2563EB;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.timeline-content {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+    padding: 28px;
+    flex-grow: 1;
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-content {
+    border-color: #93C5FD;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+    transform: translateX(4px);
+}
+
+.timeline-content h2 {
+    font-size: 20px;
+    color: #0F172A;
+    margin: 10px 0 8px;
+}
+
+.timeline-content p {
+    font-size: 14px;
+    color: #64748B;
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.timeline-tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.timeline-tags span {
+    background: #F1F5F9;
+    color: #475569;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+.btn-more {
+    background: none;
+    border: none;
+    color: #2563EB;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.2s ease;
+}
+
+.btn-more:hover {
+    color: #1D4ED8;
+    text-decoration: underline;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-card {
+    background: #FFFFFF;
+    width: 90%;
+    max-width: 550px;
+    border-radius: 20px;
+    padding: 32px;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay.active .modal-card {
+    transform: translateY(0);
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #F1F5F9;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #64748B;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.modal-close:hover {
+    background: #E2E8F0;
+    color: #0F172A;
+}
+
+.modal-header h2 {
+    font-size: 22px;
+    color: #0F172A;
+    margin-top: 8px;
+}
+
+.modal-body h3 {
+    font-size: 15px;
+    color: #1E293B;
+    margin: 20px 0 10px;
+}
+
+.modal-topics {
+    list-style: none;
+    padding: 0;
+}
+
+.modal-topics li {
+    font-size: 14px;
+    color: #475569;
+    padding: 8px 0;
+    border-bottom: 1px dashed #E2E8F0;
+}
+
+.modal-topics li:last-child {
+    border-bottom: none;
+}
+
+.resource-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-resource {
+    text-decoration: none;
+    background-color: #EFF6FF;
+    color: #2563EB;
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #DBEAFE;
+    transition: background 0.2s ease;
+    text-align: center;
+}
+
+.btn-resource:hover {
+    background-color: #DBEAFE;
+}
+
+
+@media (max-width: 640px) {
+    .timeline-container::before {
+        left: 20px;
+    }
+
+    .timeline-number {
+        width: 42px;
+        height: 42px;
+        font-size: 14px;
+    }
+
+    .timeline-item {
+        gap: 12px;
+    }
+
+    .timeline-content {
+        padding: 20px;
+    }
+}

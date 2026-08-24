@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssfiles/main.css">
+    <link rel="stylesheet" href="cssfiles/books.css">
+    <title>Hangul Step</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+        <div class="logo-container">
+            <a href="index.html" class="logo-text">
+                <h1>Hangul step</h1>
+            </a>
+        </div>
+        <div class="nav-container">
+            <nav class="navigation">
+                <a href="roadmap.html" class="active">Дорожная карта</a>
+                <a href="books.html">Книги и материалы</a>
+                <a href="grammar.html">Грамматика</a>
+                <a href="index.html#about">Об авторе</a>
+            </nav>
+        </div>
+        <div class="instruments-container">
+            <button class="login-btn" id="login-btn">Login</button>
+        </div>
+
+    </header>
+
+    <main>
+        <!-- HERO SECTION WITH FILTER -->
+        <section class="books-hero">
+            <div class="books-hero-container">
+                <span class="hero-badge">Resource Library</span>
+                <h1>Библиотека и материалы</h1>
+                <p>Учебники, прописи, рабочие тетради и сборники тестов для любого уровня</p>
+
+                <!-- SEARCH BOX -->
+                <div class="search-box">
+                    <input type="text" id="book-search" placeholder="Поиск книги по названию или автору...">
+                    <span class="search-icon">🔍</span>
+                </div>
+
+                <!-- FILTER -->
+                <div class="category-filters">
+                    <button class="cat-btn active" data-category="all">Все материалы</button>
+                    <button class="cat-btn" data-category="textbook">Учебники</button>
+                    <button class="cat-btn" data-category="workbook">Прописи и Тетради</button>
+                    <button class="cat-btn" data-category="topik">Тесты TOPIK</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- BOOK GRID -->
+        <section class="books-catalog">
+            <div class="books-grid">
+
+                <!-- BOOK 1 -->
+                <div class="book-card" data-category="workbook">
+                    <div class="book-cover-placeholder">
+                        <span>✍️</span>
+                    </div>
+                    <div class="book-info">
+                        <span class="level-badge badge-start">Уровень 0</span>
+                        <h3>Прописи Хангыль (PDF)</h3>
+                        <p>Пошаговая тетрадь для постановки почерка, правильного порядка черт и запоминания алфавита.
+                        </p>
+                        <div class="book-footer">
+                            <span class="file-size">📄 15 MB</span>
+                            <a href="#" class="btn-download">Скачать PDF</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BOOK 2 -->
+                <div class="book-card" data-category="textbook">
+                    <div class="book-cover-placeholder">
+                        <span>📘</span>
+                    </div>
+                    <div class="book-info">
+                        <span class="level-badge">TOPIK I (1 гып)</span>
+                        <h3>Сеульский национальный университет (1A)</h3>
+                        <p>Базовый учебник начального уровня с правилами грамматики, диалогами и лексикой.</p>
+                        <div class="book-footer">
+                            <span class="file-size">📄 45 MB</span>
+                            <a href="#" class="btn-download">Скачать PDF</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BOOK 3 -->
+                <div class="book-card" data-category="topik">
+                    <div class="book-cover-placeholder">
+                        <span>📝</span>
+                    </div>
+                    <div class="book-info">
+                        <span class="level-badge">TOPIK I & II</span>
+                        <h3>Сборник официальных тестов TOPIK</h3>
+                        <p>Архив реальных экзаменационных вариантов прошлых лет с ключами и аудированием.</p>
+                        <div class="book-footer">
+                            <span class="file-size">📄 80 MB</span>
+                            <a href="#" class="btn-download">Скачать PDF</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3 class="footer-logo">KoreanPath</h3>
+                <p>Авторская система и пошаговая дорожная карта изучения корейского языка.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="roadmap.html">Дорожная карта</a></li>
+                    <li><a href="books.html">Материалы и книги</a></li>
+                    <li><a href="grammar.html">Грамматика</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Контакты & Соцсети</h4>
+                <p>По вопросам и сотрудничеству:</p>
+                <a href="mailto:example@koreanpath.com" class="footer-email">contact@koreanpath.com</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 KoreanPath. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="js.files/booksjs.js"></script>
+</body>
+
+</html>
